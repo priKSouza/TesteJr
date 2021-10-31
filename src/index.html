@@ -1,13 +1,45 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AngularPokebusca</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularPokebusca</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="identificacao">Olá, Priscila Souza</div>
+    </header>
+
+    <nav id="sessao-principal">
+      <h1 class="titulo">Fase teste prático Front_end</h1>
+      <div class="campo-buscar">
+        <input class="busca" type="text" placeholder="Buscar" id="icon" />
+      </div>
+    </nav>
+    <div class="subtitulo">
+      <h3>Pokebusca</h3>
+    </div>
+    <hr/>
+
+    <main>
+      <div id="exibicao-paginas"></div>
+
+      <div id="lista"></div>
+    </main>
+
+    <app-root></app-root>
+
+    <footer>
+      <div class="rodape">Desenvolvido por Priscila Souza | Advise</div>
+    </footer>
+  </body>
 </html>
