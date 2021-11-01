@@ -8,6 +8,7 @@ import { PokemonCardComponent } from "./pokemon-card/pokemon-card.component";
 import { HttpClientModule } from '@angular/common/http'
 import { PokemonService } from "./services/pokemon.service";
 
+
 @NgModule({
   declarations: [AppComponent, PokemonListComponent, PokemonCardComponent],
   imports: [BrowserModule, HttpClientModule],
