@@ -20,6 +20,9 @@ export class PokemonService {
       .toPromise();
 
     this.pokemons = requisicao.results;
+    this.pokemons.map((i, ix)=>{
+          i.id = ix + 1;
+        })
   }
 
   async carregarPokemonsFiltrados(nome: string) {
