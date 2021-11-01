@@ -1,10 +1,26 @@
+<section>
+  <div id="exibicao-paginas"></div>
+</section>
+<!-- <hr class="linha-2"> -->
+<!-- <pagination-controls (pageChange)="onPageChange($event)" previousLabel="" nextLabel="">
+</pagination-controls> -->
 <div class="pokemon-list">
   <app-pokemon-card
-    *ngFor="let pokemon of pokemonService.pokemons; index as i"
+    *ngFor="
+      let pokemon of pokemonService.pokemons
+        | paginate: { itemsPerPage: 20, currentPage: p, totalItems: 151 };
+      index as i"
     [pokemon]="pokemon.name"
-    [numero]="i + 1"
+    [numero]="pokemon.id"
   ></app-pokemon-card>
 </div>
+<pagination-controls
+  (pageChange)="onPageChange($event)"
+  previousLabel=""
+  nextLabel=""
+>
+</pagination-controls>
+
 <!--
 <div *ngFor="let pokemon of pokemons">Pokemon: {{ pokemon }}</div>
 -->
